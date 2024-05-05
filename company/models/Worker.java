@@ -6,6 +6,6 @@ public final class Worker extends Employee{
         super(name, id, salary);
     }
     public void work(){
-        System.out.println("Worker"+getName()+"is working...");
+        System.out.println("Worker "+getName()+" is working...");
     }
 }

@@ -6,7 +6,7 @@ public class Manager extends Employee {
         super(name, id, salary);
     }
     public void work(){
-        System.out.println("Manager"+ getName() +"is managing...");
+        System.out.println("Manager "+ getName() +" is managing...");
     }
     
 }
