@@ -20,6 +20,20 @@ public abstract class Employee implements Employable{
         System.out.println("Rozpoczecie pracy");
     }
 
+    public boolean equals(Object obj){
+        if (obj == null){
+            return false;
+        }
+        if (this == obj){
+            return true;
+        }
+        if (!(obj instanceof Employee)) {
+            return false;
+        }
+        Employee otherEmployee =(Employee) obj;
+        return this.id == otherEmployee.id;
+    }
+
     public String getName(){
         return name;
     }
